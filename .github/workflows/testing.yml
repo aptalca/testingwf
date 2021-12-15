@@ -19,4 +19,4 @@ jobs:
 
       - name: Build docker
         run: |
-          DOCKER_BUILDKIT=1 docker build --buildkitd-flags '--allow-insecure-entitlement security.insecure' -t test .
+          DOCKER_BUILDKIT=1 docker buildx build --buildkitd-flags '--allow-insecure-entitlement security.insecure' -t test .
